@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: "Barlow Semi Condensed";
+        background-color: #FDFCF5;
+    }
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #323231 #ffffff;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 16px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #323231;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
+    ::selection{
+        background: #49418D;
+        color: white;
+    }
+}
+
+.stroke {
+    background-image: linear-gradient(45deg, pink, #FFF086, #897BCF);
+    background-repeat: no-repeat;
+    background-position: 4px bottom;
+    background-size: 100% 50px;
+    text-decoration: none;
+}
+
+.checkered{
+    min-height: 750px;
+    background:
+            repeating-linear-gradient(
+                    to right,
+                    transparent,
+                    transparent 50px,
+                    #FDFCF5 50px,
+                    #FDFCF5 55px
+            ),
+            repeating-linear-gradient(
+                    to bottom,
+                    transparent,
+                    transparent 50px,
+                    #FDFCF5 50px,
+                    #FDFCF5 55px
+            ),
+            linear-gradient(45deg, pink, #FFF086, #897BCF);
+}
+
+.shadowBack{
+    box-shadow: 1px 1px 0px 0px rgba(2, 3, 10, 1),
+    2px 2px 0px 0px rgba(2, 3, 10, 1), 3px 3px 0px 0px rgba(2, 3, 10, 1),
+    4px 4px 0px 0px rgba(2, 3, 10, 1), 5px 5px 0px 0px rgba(2, 3, 10, 1),
+    6px 6px 0px 0px rgba(2, 3, 10, 1), 7px 7px 0px 0px rgba(2, 3, 10, 1),
+    8px 8px 0px 0px rgba(2, 3, 10, 1), 9px 9px 0px 0px rgba(2, 3, 10, 1),
+    10px 10px 0px 0px rgba(2, 3, 10, 1);
+}
+.shadowBack:hover{
+    box-shadow: 1px 1px 0px 0px rgba(94, 83, 162, 1),
+    2px 2px 0px 0px rgba(94, 83, 162, 1), 3px 3px 0px 0px rgba(94, 83, 162, 1),
+    4px 4px 0px 0px rgba(94, 83, 162, 1), 5px 5px 0px 0px rgba(94, 83, 162, 1),
+    6px 6px 0px 0px rgba(94, 83, 162, 1), 7px 7px 0px 0px rgba(94, 83, 162, 1),
+    8px 8px 0px 0px rgba(94, 83, 162, 1), 9px 9px 0px 0px rgba(94, 83, 162, 1),
+    10px 10px 0px 0px rgba(94, 83, 162, 1);
+}
+
+.shadowBackPurpleXXL{
+    box-shadow: 1px 1px 0px 0px rgba(94, 83, 162, 1),
+    2px 2px 0px 0px rgba(94, 83, 162, 1), 3px 3px 0px 0px rgba(94, 83, 162, 1),
+    4px 4px 0px 0px rgba(94, 83, 162, 1), 5px 5px 0px 0px rgba(94, 83, 162, 1),
+    6px 6px 0px 0px rgba(94, 83, 162, 1), 7px 7px 0px 0px rgba(94, 83, 162, 1),
+    8px 8px 0px 0px rgba(94, 83, 162, 1), 9px 9px 0px 0px rgba(94, 83, 162, 1),
+    10px 10px 0px 0px rgba(94, 83, 162, 1), 11px 11px 0px 0px rgba(94, 83, 162, 1),
+    12px 12px 0px 0px rgba(94, 83, 162, 1), 13px 13px 0px 0px rgba(94, 83, 162, 1),
+    14px 14px 0px 0px rgba(94, 83, 162, 1), 15px 15px 0px 0px rgba(94, 83, 162, 1) ;
+}
+
+.shadowBack:active{
+    box-shadow: 1px 1px 0px 0px rgba(2, 3, 10, 1),
+    2px 2px 0px 0px rgba(2, 3, 10, 1), 3px 3px 0px 0px rgba(2, 3, 10, 1),
+    4px 4px 0px 0px rgba(2, 3, 10, 1), 5px 5px 0px 0px rgba(2, 3, 10, 1),
+    6px 6px 0px 0px rgba(2, 3, 10, 1), 7px 7px 0px 0px rgba(2, 3, 10, 1),
+    8px 8px 0px 0px rgba(2, 3, 10, 1), 9px 9px 0px 0px rgba(2, 3, 10, 1),
+    10px 10px 0px 0px rgba(2, 3, 10, 1);
+}
+
+.shadowBackSmall{
+    box-shadow: 1px 1px 0px 0px rgba(2, 3, 10, 1),
+    2px 2px 0px 0px rgba(2, 3, 10, 1), 3px 3px 0px 0px rgba(2, 3, 10, 1),
+    4px 4px 0px 0px rgba(2, 3, 10, 1), 5px 5px 0px 0px rgba(2, 3, 10, 1);
+}
+
+.shadowBackSmallPurple{
+    box-shadow: 1px 1px 0px 0px rgba(94, 83, 162, 1),
+    2px 2px 0px 0px rgba(94, 83, 162, 1), 3px 3px 0px 0px rgba(94, 83, 162, 1),
+    4px 4px 0px 0px rgba(94, 83, 162, 1), 5px 5px 0px 0px rgba(94, 83, 162, 1);
+}
+
+.shadowBackSmallPurpleNonActive{
+    box-shadow: 1px 1px 0px 0px rgba(94, 83, 162, 1),
+    2px 2px 0px 0px rgba(94, 83, 162, 1), 3px 3px 0px 0px rgba(94, 83, 162, 1),
+    4px 4px 0px 0px rgba(94, 83, 162, 1), 5px 5px 0px 0px rgba(94, 83, 162, 1);
+}
+
+.shadowBackSmallPurple:hover{
+    box-shadow: 1px 1px 0px 0px rgba(94, 83, 162, 1),
+    2px 2px 0px 0px rgba(2, 3, 10, 1), 3px 3px 0px 0px rgba(2, 3, 10, 1),
+    4px 4px 0px 0px rgba(2, 3, 10, 1), 5px 5px 0px 0px rgba(2, 3, 10, 1);
+}
+
+.shadowBackLarge{
+    box-shadow: 1px 1px 0px 0px rgba(2, 3, 10, 1),
+    2px 2px 0px 0px rgba(2, 3, 10, 1), 3px 3px 0px 0px rgba(2, 3, 10, 1),
+    4px 4px 0px 0px rgba(2, 3, 10, 1), 5px 5px 0px 0px rgba(2, 3, 10, 1),
+    6px 6px 0px 0px rgba(2, 3, 10, 1), 7px 7px 0px 0px rgba(2, 3, 10, 1),
+    8px 8px 0px 0px rgba(2, 3, 10, 1), 9px 9px 0px 0px rgba(2, 3, 10, 1),
+    10px 10px 0px 0px rgba(2, 3, 10, 1);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.loading {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.bar-wrapper {
+    width: 33.333333%;
+    height: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    background-color: black;
+}
+
+.navbarclicked{
+    background-color: #FDFCF5;
+}
