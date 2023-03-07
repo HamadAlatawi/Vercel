@@ -236,15 +236,15 @@
                                 <div class="col-span-1"></div>
                                 <div class="col-span-10">
                                     {#key index}
-                                        <div class="text-4xl md:text-6xl lg:text-4xl xl:text-6xl 2xl:text-8xl">
+                                        <div class="text-center lg:text-start text-5xl md:text-6xl lg:text-4xl xl:text-6xl 2xl:text-8xl">
                                             <h1 class="" transition:slide>{ride[index]}</h1>
                                             <h1 class="mt-12 font-bold" transition:slide>{simplified[index]}</h1>
                                         </div>
                                     {/key}
-                                    <p class="text-base lg:text-lg xl:text-lg 2xl:text-xl mt-10">Mobigo offers a hassle-free and convenient way to get around, without the need to worry about parking or navigating public transportation.</p>
-                                    <div class="flex gap-32 mt-10 items-center">
-                                        <button class="shadowBack px-10 py-4 placeholder-Shade01 text-Shade01 font-medium lg:text-sm xl:text-lg 2xl:text-2xl border-solid rounded-tl-md border-4 border-Shade01">Learn More</button>
-                                        <a class="lg:text-sm xl:text-lg 2xl:text-2xl" href="#">Pricing</a>
+                                    <p class="text-center lg:text-start text-base lg:text-lg xl:text-lg 2xl:text-xl mt-10">Mobigo offers a hassle-free and convenient way to get around, without the need to worry about parking or navigating public transportation.</p>
+                                    <div class="flex mt-10 items-center justify-around">
+                                        <button class="shadowBack w-36 h-16 placeholder-Shade01 text-Shade01 font-medium lg:text-sm xl:text-lg 2xl:text-2xl border-solid rounded-tl-md border-4 border-Shade01">Learn More</button>
+                                        <a class="text-lg lg:text-sm xl:text-lg 2xl:text-2xl" href="#">Pricing</a>
                                     </div>
                                     <div class="flex items-center mt-24 lg:text-lg xl:text-xl 2xl:text-2xl">
                                         <img src="/Wheel.jpg" alt="Convenient Transportation Icon" class="object-scale-down w-16 h-16 shadowBackSmall border-6 mr-4 border-Shade01">
@@ -271,9 +271,11 @@
                             </div>
                         </div>
                         <div class="col-span-12 lg:col-span-6 text-7xl font-black text-Neutral8 checkered flex justify-center items-center">
-                            <Canvas>
-                                <Scene />
-                            </Canvas>
+                            <div class="col-span-8 h-80 w-full lg:col-span-10 lg:h-full">
+                                <Canvas>
+                                    <Scene />
+                                </Canvas>
+                            </div>
                         </div>
                     </div>
                 </div>

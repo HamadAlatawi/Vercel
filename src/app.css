@@ -42,7 +42,7 @@
 }
 
 .checkered{
-    min-height: 750px;
+    min-height: 500px;
     background:
             repeating-linear-gradient(
                     to right,
