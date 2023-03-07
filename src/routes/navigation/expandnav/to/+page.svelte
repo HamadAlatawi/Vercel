@@ -1,4 +1,5 @@
 <script>
+    import { destination } from "../../../../stores.js";
     import { fly } from 'svelte/transition';
     import { clickOutside } from '../../../actions/clickOutside/clicked_outside'
 
@@ -15,7 +16,7 @@
                     <div class="col-span-4 pl-5">
                         <div class="mt-5">
                             <label for="Destination" class="block mb-2 text-md font-semibold text-black">Search Address</label>
-                            <input type="text" id="Destination" class="mt-2 font-semibold border bg-Primary2 border-3 shadowBackSmall border-Shade01 text-white text-md placeholder-white rounded-tl-md py-3 px-12 focus:outline focus:outline-Base focus:ring-1 focus:ring-PrimaryDark focus:ring-offset-4 focus:ring-offset-PrimaryDark" placeholder="Address" required>
+                            <input type="text" id="Destination" class="mt-2 font-semibold border bg-Primary2 border-3 shadowBackSmall border-Shade01 text-white text-md placeholder-white rounded-tl-md py-3 px-12 focus:outline focus:outline-Base focus:ring-1 focus:ring-PrimaryDark focus:ring-offset-4 focus:ring-offset-PrimaryDark" bind:value={$destination} required>
                         </div>
                     </div>
                     <div class="col-span-1"></div>

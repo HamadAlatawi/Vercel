@@ -1,13 +1,13 @@
 <script>
+    import { time } from '../../../../stores.js';
     import { fly } from 'svelte/transition';
     import { clickOutside } from '../../../actions/clickOutside/clicked_outside'
 
-    //Variables
-    let time = new Date();
-
-    $: hours = time.getHours();
-    $: minutes = time.getMinutes();
-    $: currentTime = hours + ":" + minutes;
+    const formatter = new Intl.DateTimeFormat('en', {
+        hour12: false,
+        hour: 'numeric',
+        minute: '2-digit',
+    });
 
     export let pickUpTime = false;
 </script>
@@ -21,7 +21,7 @@
                     <div class="col-span-4 pl-5">
                         <div class="mt-5 block">
                             <p class="font-semibold">Select a time:</p>
-                            <input class="mt-2 mr-4 font-semibold bg-Primary2 border border-3 shadowBackSmall border-Shade01 text-white text-lg placeholder-black rounded-tl-md py-3 px-12 focus:outline focus:outline-Base focus:ring-1 focus:ring-PrimaryDark focus:ring-offset-4 focus:ring-offset-PrimaryDark" bind:value={currentTime} type="time" id="appt" name="appt">
+                            <input class="mt-2 mr-4 font-semibold bg-Primary2 border border-3 shadowBackSmall border-Shade01 text-white text-lg placeholder-black rounded-tl-md py-3 px-12 focus:outline focus:outline-Base focus:ring-1 focus:ring-PrimaryDark focus:ring-offset-4 focus:ring-offset-PrimaryDark" value={formatter.format($time)} type="time" id="appt" name="appt">
                         </div>
                     </div>
                     <div class="col-span-1"></div>

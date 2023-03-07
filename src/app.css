@@ -104,6 +104,12 @@
     4px 4px 0px 0px rgba(2, 3, 10, 1), 5px 5px 0px 0px rgba(2, 3, 10, 1);
 }
 
+.shadowBackSmallRed{
+    box-shadow: 1px 1px 0px 0px rgba(219, 70, 96, 1),
+    2px 2px 0px 0px rgba(219, 70, 96, 1), 3px 3px 0px 0px rgba(219, 70, 96, 1),
+    4px 4px 0px 0px rgba(219, 70, 96, 1), 5px 5px 0px 0px rgba(219, 70, 96, 1);
+}
+
 .shadowBackSmallPurple{
     box-shadow: 1px 1px 0px 0px rgba(94, 83, 162, 1),
     2px 2px 0px 0px rgba(94, 83, 162, 1), 3px 3px 0px 0px rgba(94, 83, 162, 1),
@@ -163,4 +169,10 @@
 
 .navbarclicked{
     background-color: #FDFCF5;
+}
+
+@media screen and (max-width:1280px){
+    .mobiLogo{
+        width: 60px;
+    }
 }
